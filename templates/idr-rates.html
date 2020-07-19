@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h3>Data Scraping With Bs4 Rupiah (Rp)/ IDR Rate Currency Using Json</h3>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>CODE</th>
+        <th>NAME</th>
+        <th>DATE</th>
+        <th>INVERSE RATE</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for data in datas %}
+      <tr>
+        <td>{{ data['code'] }}</td>
+        <td>{{ data['name'] }}</td>
+        <td>{{ data['date'] }}</td>
+        <td>{{ data['inverseRate'] }}</td>
+
+      </tr>
+    {% endfor %}
+
+  </table>
+
+
+  </table>
+
+{% endblock %}
