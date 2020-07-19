@@ -39,7 +39,7 @@
 <br>
 
 <div class="container-fluid">
-  <h3>Data Berita Terpopuler #Detik.com</h3>
+  <h3>Data Berita Terpopuler #detik.com</h3>
     {% for image in images %}
         {{ image|safe }}
         <a href="{{image.find('a')['href']|safe}}">{{image.find('a').find('img')['title']|safe}}</a>
